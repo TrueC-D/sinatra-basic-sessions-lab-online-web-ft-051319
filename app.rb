@@ -11,9 +11,6 @@ class App < Sinatra::Base
   
   post '/checkout' do 
     bidning.pry
-    @session = session
-    @item = item
-    @session[:item]
-    @session[:item] = @item
+    session[:item] = item
   end
 end
