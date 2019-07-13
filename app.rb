@@ -10,7 +10,6 @@ class App < Sinatra::Base
   get ('/'){erb :index}
   
   post '/checkout' do 
-    bidning.pry
     session[:item] = item
   end
 end
